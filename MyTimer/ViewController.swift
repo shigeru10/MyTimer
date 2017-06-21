@@ -47,4 +47,12 @@ class ViewController: UIViewController {
 
         return remainCount
     }
+    
+    func timerInterrupt(_ timer:Timer) {
+        count += 1
+        if displayUpdate() <= 0 {
+            count = 0
+            timer.invalidate()
+        }
+    }
 }
