@@ -19,6 +19,17 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        timerSettingPicker.delegate = self
+        timerSettingPicker.dataSource = self
+        
+        let settings = UserDefaults.standard
+        let timerValue = settings.integer(forKey: settingKey)
+        
+        for row in 0..<settingArray.count {
+            if settingArray[row] == timerValue {
+                timerSettingPicker.selectRow(row, inComponent: 0, animated: true)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
