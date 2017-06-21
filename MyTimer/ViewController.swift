@@ -49,6 +49,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func stopButtonAction(_ sender: Any) {
+        if let nowTimer = timer {
+            if nowTimer.isValid == true {
+                nowTimer.invalidate()
+            }
+        }
     }
 
     func displayUpdate() -> Int {
