@@ -28,6 +28,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        count = 0
+        _ = displayUpdate()
+    }
 
     @IBAction func settingButtonAction(_ sender: Any) {
         if let nowTimer = timer {
