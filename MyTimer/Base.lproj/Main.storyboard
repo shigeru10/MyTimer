@@ -39,6 +39,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" backgroundImage="start"/>
+                                <connections>
+                                    <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2N4-fl-DKU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBz-WB-aj8">
                                 <rect key="frame" x="227" y="393.5" width="80" height="80"/>
@@ -47,6 +50,9 @@
                                     <constraint firstAttribute="height" constant="80" id="xWn-Vh-ELk"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="stop"/>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSt-Dm-Dwo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,9 +66,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iLi-Wb-IEs">
-                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="iRx-fC-GEC"/>
+                        <barButtonItem key="rightBarButtonItem" title="秒数設定" id="iRx-fC-GEC">
+                            <connections>
+                                <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="tQH-yZ-nYO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countDownLabel" destination="ixa-yf-Y5u" id="283-sh-YKY"/>
                         <segue destination="hj9-I0-joA" kind="show" id="4vC-tu-Fop"/>
                     </connections>
                 </viewController>
