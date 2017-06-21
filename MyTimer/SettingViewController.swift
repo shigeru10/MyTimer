@@ -8,8 +8,11 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    let settingArray : [Int] = [10, 20, 30, 40, 50, 60]
+    let settingKey = "timer_value"
+    
     @IBOutlet weak var timerSettingPicker: UIPickerView!
 
     override func viewDidLoad() {
@@ -23,6 +26,13 @@ class SettingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return settingArray.count
+    }
 
     /*
     // MARK: - Navigation
