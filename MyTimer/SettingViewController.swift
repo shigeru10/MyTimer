@@ -48,6 +48,12 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return String(settingArray[row])
     }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let settings = UserDefaults.standard
+        settings.setValue(settingArray[row], forKey: settingKey)
+        settings.synchronize()
+    }
 
     /*
     // MARK: - Navigation
