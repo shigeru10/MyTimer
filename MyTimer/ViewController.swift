@@ -30,6 +30,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func settingButtonAction(_ sender: Any) {
+        if let nowTimer = timer {
+            if nowTimer.isValid == true {
+                nowTimer.invalidate()
+            }
+        }
+        performSegue(withIdentifier: "goSetting", sender: nil)
     }
 
     @IBAction func startButtonAction(_ sender: Any) {
