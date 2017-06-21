@@ -38,5 +38,13 @@ class ViewController: UIViewController {
     @IBAction func stopButtonAction(_ sender: Any) {
     }
 
-}
+    func displayUpdate() -> Int {
+        let settings = UserDefaults.standard
+        let timerValue = settings.integer(forKey: settingKey)
+        let remainCount = timerValue - count
 
+        countDownLabel.text = "残り\(remainCount)秒"
+
+        return remainCount
+    }
+}
