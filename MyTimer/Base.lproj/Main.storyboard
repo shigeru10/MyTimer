@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="g2b-oa-Hsp">
             <objects>
-                <viewController id="hj9-I0-joA" sceneMemberID="viewController">
+                <viewController id="hj9-I0-joA" customClass="SettingViewController" customModule="MyTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iax-MG-JPi"/>
                         <viewControllerLayoutGuide type="bottom" id="WdZ-r0-MGi"/>
