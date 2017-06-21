@@ -10,6 +10,8 @@ import UIKit
 
 class SettingViewController: UIViewController {
 
+    @IBOutlet weak var timerSettingPicker: UIPickerView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,4 +34,6 @@ class SettingViewController: UIViewController {
     }
     */
 
+    @IBAction func decisionButtonAction(_ sender: Any) {
+    }
 }
