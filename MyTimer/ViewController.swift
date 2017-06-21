@@ -11,10 +11,17 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var countDownLabel: UILabel!
+    
+    var timer : Timer?
+    var count = 0
+    let settingKey = "timer_value"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let settings = UserDefaults.standard
+        settings.register(defaults: [settingKey:10])
     }
     
     override func didReceiveMemoryWarning() {
