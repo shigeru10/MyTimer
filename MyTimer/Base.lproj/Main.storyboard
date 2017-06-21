@@ -74,7 +74,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="countDownLabel" destination="ixa-yf-Y5u" id="283-sh-YKY"/>
-                        <segue destination="hj9-I0-joA" kind="show" id="4vC-tu-Fop"/>
+                        <segue destination="hj9-I0-joA" kind="show" identifier="goSetting" id="4vC-tu-Fop"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,7 +89,7 @@
                         <viewControllerLayoutGuide type="top" id="iax-MG-JPi"/>
                         <viewControllerLayoutGuide type="bottom" id="WdZ-r0-MGi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="goSetting" id="LYD-HV-3gl">
+                    <view key="view" contentMode="scaleToFill" id="LYD-HV-3gl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
