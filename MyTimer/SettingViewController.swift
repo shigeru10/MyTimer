@@ -66,5 +66,6 @@ class SettingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     */
 
     @IBAction func decisionButtonAction(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
     }
 }
