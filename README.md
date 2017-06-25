@@ -1,7 +1,7 @@
 # MyTimer
 
 ```
-$ git clone git@~
+$ git clone git@github.com:shigeru10/MyTimer.git
 ```
 
 ```
