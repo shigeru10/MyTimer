@@ -1,5 +1,6 @@
 # MyTimer
 
+ssh出ないときは適宜修正
 ```
 $ git clone git@github.com:shigeru10/MyTimer.git
 ```
